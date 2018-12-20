@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function foo(){
+        document.write('<h1> lodding... </h1>');
+       return new Promise((res,rej)=>
+    
+        setTimeout(()=>{
+            res ("<h1>hello world</h1>")
+        },2000));
+    };
+    foo().then((data)=>{
+     document.write(data);
+    });
+   
+    
+    </script>
+</body>
+</html>
